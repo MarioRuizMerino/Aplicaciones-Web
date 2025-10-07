@@ -1,0 +1,40 @@
+/* Cuando es un id, ponemos delante un # */
+#titulo {
+    color: red; 
+}
+/* Cuando es una clase, ponermos delante un . */
+.trabajador {
+    background-color:grey;
+    margin: 0;
+}
+
+.tra1 {
+    color:blue;
+}
+
+.tra2 {
+    color:green;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dp {
+    border-style: solid;
+}
+
+.estudios {
+    border-style: double ;
+    border-width: 5px ;
+}
+
+.subrayar {
+    text-decoration: underline;
+}
+
+/* Selector de etiqueta (pre */
+/* pre {   
+    font-style: italic;
+} */
