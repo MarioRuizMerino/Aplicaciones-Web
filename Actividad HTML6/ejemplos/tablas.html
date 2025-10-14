@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" conent="Mario Ruiz Merino">
+    <meta name="description" content="Ejemplo de la etiqueta table">
+    <link rel="stylesheet" href="estilo-tabla.css" type="text/css"/>
+    <title>Ejemplo de la etiqueta table</title>
+</head>
+<body>
+    
+    <!-- Apertura de tabla -->
+    <table>
+        <!-- Fila de la cabecera -->
+        <tr>
+            <th>Título columna 1</th> <!-- Celda cabecera columna 1 -->
+            <th>Título columna 2</th> <!-- Celda cabecera columna 2 -->
+            <th>Título columna 3</th> <!-- Celda cabecera columna 3 -->
+        </tr>
+
+        <!-- Fila primera -->
+        <tr>
+            <td>Celda F1C1</td> <!-- Celda 1 de la fila 1 -->
+            <td>Celda F1C2</td> <!-- Celda 2 de la fila 1 -->
+            <td>Celda F1C3</td> <!-- Celda 3 de la fila 1 -->
+        </tr>
+
+        <!-- Fila segunda -->
+        <tr>
+            <td>Celda F2C1</td> <!-- Celda 1 de la fila 2 -->
+            <td>Celda F2C2</td> <!-- Celda 2 de la fila 2 -->
+            <td>Celda F2C3</td> <!-- Celda 3 de la fila 2 -->
+        </tr>
+
+                <!-- Fila segunda -->
+        <tr>
+            <td>Celda F3C1</td> <!-- Celda 1 de la fila 3 -->
+            <td colspan="2">Celda F3C2 y 3</td> <!-- Celda 2 y 3 de la fila 3 -->
+        </tr>
+    </table>
+
+    <br>
+    <table>
+        <!-- Primera fila -->
+        <tr>
+            <td colspan="3"> 2022</td>
+        </tr>
+
+        <!-- Segunda fila -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Tercera fila -->
+        <tr>
+            <td colspan="2" rowspan="2">FIESTA</td>
+            <td></td>
+        </tr>
+
+        <!-- Cuarta fila -->
+        <tr>
+            <td></td>
+        </tr>
+
+        <!-- Quinta fila -->
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
