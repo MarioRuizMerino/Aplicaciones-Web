@@ -1,0 +1,61 @@
+.imagen {
+    max-width: 300px;
+    transform: rotate(-90deg);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even)  {
+    background-color: #fafafa;
+}
+
+td {
+    padding-right: 30px;
+}
+
+th, header{
+    background-color: #F5A623;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    padding: 1rem;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif
+}
+
+header h1 {   
+    margin: 0px;
+}
+
+main {
+    background-color: beige;
+    padding: 2rem;
+}
+
+.receta {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
