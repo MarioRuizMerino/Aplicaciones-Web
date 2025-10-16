@@ -1,61 +1,118 @@
-.imagen {
-    max-width: 300px;
-    transform: rotate(-90deg);
+/* Configuarcion del cuerpo de la página */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-tr:nth-child(even)  {
-    background-color: #fafafa;
-}
-
-td {
-    padding-right: 30px;
-}
-
-th, header{
+/* Configuración de la Cabecera */
+header {
     background-color: #F5A623;
-    color: white;
     text-align: center;
 }
-
+header h1 {
+    margin: 0;
+    color: white;
+}
 header {
     margin: auto;
     padding: 1rem;
 }
 
-body {
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-    font-family: Arial, sans-serif
-}
-
-header h1 {   
-    margin: 0px;
-}
-
+/* Confuración del contenido principal*/
 main {
     background-color: beige;
     padding: 2rem;
 }
 
-.receta {
-    background-color: white;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-width: 800px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin: auto;
-}
-
+/* Confuración del pie de página*/
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px;
+}
+
+/* Configuración de la receta*/
+.receta {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+    /* Imagen */
+.imagen {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+    /* Lista */
+ul {
+    list-style: square;
+    padding: 20px;
+    margin-top: 0;
+}
+li {
+    margin-bottom: 10px;   /* AYUDA */
+}
+    /* Elaboracion de la receta */
+.elaboracion p {
+    line-height: 1.6;
+}
+
+    /* Ingredientes */
+.ingredientes {
+    margin-top: 0.5rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    background-color: #F5A623;
+    color: white;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+}
+td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+tr:nth-child(even)  {
+    background-color: #fafafa;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Encabezados h1 y h2 */
+h1 {
+    color: #F5A623;
+    text-align: center;
+}
+h2 {
+    color: #F5A623;
+}
+
+/* Extra */
+span {
+    color: #F5A623;
+    font-weight: bold; /* PREGUNTARLE */
+}
+p {
+    text-align: justify;
+}
+.centered {
+    text-align: center;
+}
+.pad {
+    margin: 0;
 }

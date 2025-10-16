@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" conent="Mario Ruiz Merino">
+    <meta name="author" content="Mario Ruiz Merino">
     <meta name="description" content="Practica C1">
     <link rel="stylesheet" href="estilos.css" type="text/css"/>
     <meta name="font" content="Arial, sans-serif">
@@ -14,23 +14,28 @@
     <main>
         <div class="receta">
             <h1>Un buen pollo, con salsa y picante</h1>
-            <div class="imagen-receta"style="text-align: center;">
+            <p class="centered">Plato de pechuga de pollo, con salsa y picante</p>
+            <div class="imagen-receta">
                 <img class="imagen" src="Comida.jpg" alt="Foto receta">
             </div>
             <div class="caracteristicas">
-                <h2>Cosas a tener en cuenta</h2>
+                <h2 class="pad">Cosas a tener en cuenta</h2>
                 <ul>  
-                    <li>Para 2 personas</li>
-                    <li>Dificultad: Fácil</li>
-                    <li>Tiempo total de elaboración de la receta: 40 m</li>
+                    <li><span>Raciones:</span> 2</li>
+                    <li><span>Dificultad:</span> Fácil</li>
+                    <li><span>Tiempo elaboración:</span> 10 m</li>
+                    <li><span>Tiempo Cocción:</span> 30 m</li>
+                    <li><span>Tiempo total:</span> 40 m</li>
                 </ul>
             </div>
             <div class="ingredientes">
                 <h2>Ingredientes</h2>
                 <table>
                     <thead>
-                        <th>Ingrediente</th>
-                        <th>Cantidad</th>
+                        <tr>
+                            <th>Ingrediente</th>
+                            <th>Cantidad</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -58,20 +63,28 @@
                             <td>450 g</td>
                         </tr>
                         <tr>
-                            <td colspan="2">Aceite de oliva virgen extra</td>
+                            <td >Aceite de oliva virgen extra</td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td colspan="2">Sal y pimienta al gusto</td>
+                            <td>Sal y pimienta al gusto</td>
+                            <td></td>
                         </tr>   
                     </tbody>
                 </table>
             </div>
             <div class="elaboracion">
                 <h2>Elaboración</h2>
-                <p>Texto</p>
+                <p>Empezamos preparando el pollo, que cortamos en tiras gruesas. Freimos las tiras de pollo a fuego fuerte hasta que se doren en el exterior y los reservamos mientras perparamos la sala picante de tomate. <b>En la misma sartén donde hemos dorado el pollo</b>, -añadiendo un poco más de aceite de oliva-, freimos los ajos y los pimientos muy picados.</p>
+                <p>Cortamos los tomates y los pasamos a la sartén y dejamos que todo se poche hasta que los tomates prácticamente se deshagan. Entonces añadimos el <b>vino blanco y las guindillas y dejamos reducir</b>. Cuando empieza a espesar, añadimos el concentrado de tomate y probamos para ver si está bien picante o necesitamos añadir más guindilla o más ajo.</p>
+                <p>Cuando la salsa esté a nuestro gusto, retornamos los trozos de pollo a la sartén y <b>dejamos que el conjunto cueza durante unos diez minutos</b> para que los trozos de pollo tomen todo el sabor y queden bien jugosos. Decoramos con unas hierbas aromáticas y llevamos a la mesa en la misma sartén donde lo hemos cocinado.</p>
+                <p>Espero que disfrutes mucho de esta receta. <b>Y NOS FUIMOS!!!!</b></p>
+            </div>
+            <div>
+                <img class="imagen" src="Foto-elaboracion.jpg" alt="Foto elaboración">
             </div>
         </div>
-        <footer></footer>
     </main>
+    <footer>&copy; Todos los derechos reservados - Mario Ruiz Merino</footer>
 </body>
 </html>
