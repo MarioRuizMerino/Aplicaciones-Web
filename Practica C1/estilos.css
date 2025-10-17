@@ -60,7 +60,7 @@ ul {
     margin-top: 0;
 }
 li {
-    margin-bottom: 10px;   /* AYUDA */
+    margin-bottom: 10px;
 }
     /* Elaboracion de la receta */
 .elaboracion p {
@@ -105,7 +105,7 @@ h2 {
 /* Extra */
 span {
     color: #F5A623;
-    font-weight: bold; /* PREGUNTARLE */
+    font-weight: bold;
 }
 p {
     text-align: justify;
