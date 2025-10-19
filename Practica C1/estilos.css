@@ -11,8 +11,13 @@ body {
 header {
     background-color: #F5A623;
     text-align: center;
-    margin: auto;
+    /*margin: auto;*/
     padding: 1rem;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */                   /* No es IA, es de aqui */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */ /* https://franciscoamk.com/como-crear-una-fija-estatica-con-html-y-css */
+
 }
 header h1 {
     margin: 0;
@@ -23,6 +28,7 @@ header h1 {
 main {
     background-color: beige;
     padding: 2rem;
+    margin-top: 70px;
 }
 
 /* Confuración del pie de página*/
