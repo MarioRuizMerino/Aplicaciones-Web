@@ -9,29 +9,77 @@ html, body {
     height: 100%;
 }
 
-/* Configuración general del body */
+/* El body se convierte en contenedor flex
+    - flex-direction: column -> apila verticalmente el header, main y footer
+    - min-height: 100vh -> ocupa toda la altura de la ventana (vh = viewport height)
+ */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;      /* Altura total del viewport */
 }
 
 /* Centramos y rellenamos la cabecera */
+/* Cabecera con FLEX: dos zonas -> logo/título (marca) y menú (nav) */
 .cabecera {
     text-align: center;
     padding: 1rem;
+    background: #2C3E50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Posiciona marca izq. y nav derecha */
+    align-items: center;            /* Centra verticalmente */
 }
 
-/* Título de la cabecera sin márgenes extra y color destacado */
+/* Tamaño de la imagen (logo)  */
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Título de la cabecera sin márgenes extra y color destacado
 .titulo {
     margin: 0;
     color: #2C3E50;
+} */
+
+/* Menú de navegación con flex */
+.menu {
+    list-style-type: none;
+    display: flex;          /* Para colocar los enlaces/ítems en línea */
+    flex-direction: row;    /* Por defecto es row, por lo tanto podemos prescindir de esta línea */
+    gap: 1.5rem;            /* Espacio entre enlaces */
+    margin: 0; 
+    padding: 0;
+}
+
+/* Estilos basicos de los enalces al menú */
+.menu a {
+    color: #fff;
+    text-decoration: none;      /* Elimina el subrayado*/
+    font-weight: bold;          /* Aplica negrita a los enlaces */
+    /* padding: 1rem; */
+}
+
+/* Efecto hover a los enlaces */
+.menu a:hover {
+    color: #E74C3C;
+    /* background-color: #fff; */
 }
 
 /* Zona principal (main): aplicamos relleno */
 #contenido-principal {
     padding: 1rem;
+    flex-grow: 1;          /* IMPORTANTE para "empujar" al footer hacia abajo */
+    /* flex: 1; */         /* Atajo de las propiedades flex-grow y flex-basis */
+
+    display: flex;          /* Convierto al main como contenedor flexible */
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Clase "tarjeta": usado para agrupar secciones visualmente */
@@ -71,6 +119,25 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+}
+
+/* Bordes y relleno de la tabla */
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Cabecera de la tabla con estilo diferenciado */
+.tabla th {
+    background: #2C3E50;
+    color: #fff;
+    text-align: center;
+}
+
+/* Contenido de tabla alineado a la izquierda */
+.tabla td {
+    text-align: left;
+    white-space: nowrap;    /* Evita saltos de línea en celdas */
 }
 
 /* Estilo pie de página */

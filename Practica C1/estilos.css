@@ -5,6 +5,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Configuración de la Cabecera */
@@ -17,6 +19,8 @@ header {
     left: 0; /* Posicionamos la cabecera al lado izquierdo */
     top: 0; /* Posicionamos la cabecera pegada arriba */                   /* No es IA, es de aqui */
     position: fixed; /* Hacemos que la cabecera tenga una posición fija /* https://franciscoamk.com/como-crear-una-fija-estatica-con-html-y-css */
+    display: flex;
+    flex-direction: column;
 
 }
 header h1 {
